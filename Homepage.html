@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Auction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+
+        <nav class="navbar navbar-expand-md navbar-light bg-dark rounded pt-5 pb-4">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-auto" href="Homepage.html">
+                    <span class="text-white fw-bold border-top border-bottom border-5 border-success h1">
+                        Art Auction
+                    </span>
+                </a>
+            </div>
+            <div class="nav nav-pills">
+                <div class="nav-item position-absolute start-0 top-0 ms-2 mt-5">
+                    <span onclick="openNav()">
+                        <a class="nav-link active menu-icon bg-success p-1 " aria-current="page" >
+                        </a>
+                    </span>
+
+                </div>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#About" onclick="closeNav()">About</a>
+                    <a href="TrendingAuctions.html">Trending Auctions</a>
+                    <a href="1700s_page1.html">1700s</a>
+                    <a href="1800s_page1.html">1800s</a>
+                    <a href="1900s_page1.html">1900s</a>
+                    <a href="#Support" onclick="closeNav()">Support</a>
+                </div>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse me-5">
+                    <form class="d-flex searchbar" method="get" action="Homepage.html">
+                        <input class="form-control me-2" id="disabledInput" type="text" placeholder="Search by artist, year, etc." disabled>
+                        <button class="btn btn-outline-success bgray" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+          
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <p class="text-image">Recently sold ...</p>
+                    <img style="height: 650px" src="Artworks/Recently Sold/Art-1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <h3>Constantin Hansen (1837)</h3>
+                        <p>A Group of Danish Artists in Rome</p>
+                        <p>Final Bid: $1,900</p>
+                    </div>
+                </div>
+          
+                <div class="carousel-item">
+                    <p class="text-image">Recently sold ...</p>
+                    <img style="height: 650px" src="Artworks/Recently Sold/Art-2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <h3>Johan Christian Dahl (1818)</h3>
+                        <p>A seascape. The coast of the Island of Rügen in Evening Light</p>
+                        <p>Final Bid: $1,500</p>
+                    </div>
+                </div>
+              
+                <div class="carousel-item">
+                    <p class="text-image">Recently sold ...</p>
+                    <img style="height: 650px" src="Artworks/Recently Sold/Art-3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <h3>Jens Juel (1800)</h3>
+                        <p>The Dancing Glade at Sorgenfri North of Copenhagen</p>
+                        <p>Final Bid: $1,700</p>
+                    </div>
+                </div>
+            
+            </div>
+          
+            
+            <button class="carousel-control-prev" id="previous" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="container-fluid text-fnt bg-dark bg-gradient text-white">
+            <div class="row mt-0">
+                
+                <div class="col-10 col-sm-6 mb-sm-3 me-5">
+                    <h2 class="mt-4 text-white" id="About">About</h2>
+                    <h5> Welcome to one of the biggest websites on Art Auctions.</h5>
+                    <p class="txt-justify mb-0"> Here you will find artpieces from three completely different decades and you will have the opportunity to become the next owner of some piece that you like. This website has been acredited as a reliable auction site so don't be afraid to place your bid.</p>    
+                    <a class="mt-0 text-success fw-bold" href="Homepage.html"> Learn more...</a>
+                </div>
+                <div class="col-6 col-sm-4 mb-5">
+                    <h4 class="mt-4 text-white text-decoration-underline" id="Support">Support</h4>
+                    <ul class="list-group list-group-flush">
+                        <li class="bg-dark bg-gradient list-group-item"><a href="Homepage.html" class="text-decoration-none text-white">Shipping & Returns</a></li>
+                        <li class="bg-dark bg-gradient list-group-item"><a href="Homepage.html" class="text-decoration-none text-white">Help & FAQ</a></li>
+                        <li class="bg-dark bg-gradient list-group-item"><a href="Homepage.html" class="text-decoration-none text-white">Terms and Conditions</a></li>
+                        <li class="bg-dark bg-gradient list-group-item"><a href="Homepage.html" class="text-decoration-none text-white">Privacy Policy</a></li>
+                        <li class="bg-dark bg-gradient list-group-item"><a href="Homepage.html" class="text-decoration-none text-white">Contact</a></li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("previous").style.visibility="hidden";
+            document.getElementById("mySidenav").style.width = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+            
+        }
+        function closeNav() {
+            document.getElementById("previous").style.visibility="visible";
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+    
+</body>
+</html>

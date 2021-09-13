@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Auction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid bg-dark">
+
+        <nav class="navbar navbar-expand-md navbar-light bg-secondary rounded pt-5 pb-4">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-auto" href="Homepage.html">
+                    <span class="text-white fw-bold border-top border-bottom border-5 h1">
+                        Art Auction
+                    </span>
+                </a>
+            </div>
+            <div class="nav nav-pills">
+                <div class="nav-item position-absolute start-0 top-0 ms-2 mt-5">
+                    <span onclick="openNav()">
+                        <a class="nav-link active menu-icon bg-white p-1 " aria-current="page" >
+                        </a>
+                    </span>
+
+                </div>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="Homepage.html#About" onclick="closeNav()">About</a>
+                    <a href="TrendingAuctions.html">Trending Auctions</a>
+                    <a href="1700s_page1.html">1700s</a>
+                    <a href="1800s_page1.html">1800s</a>
+                    <a class="btn disabled" href="1900s_page1.html">1900s</a>
+                    <a href="Homepage.html#Support" onclick="closeNav()">Support</a>
+                </div>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse me-5">
+                    <form class="d-flex searchbar" method="get" action="Homepage.html">
+                        <input class="form-control me-2" id="disabledInput" type="text" placeholder="Search by artist, year, etc." disabled>
+                        <button class="btn btn-outline-dark bgray" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container mt-3 pb-5">
+
+            <div class="row">
+
+                <div class="col-6 col-sm-4 ">
+                    <div class="card">
+                        <img src="Artworks/1900s/Art-7.jpg" class="card-img-top img-size p-2" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Theodore Wores</h5>
+                            <p class="card-text opacity-75">Orchard in the Mountains of Saratoga, California (1925)</p>
+                            <div class="row opacity-50">
+                                <p class="mb-0">
+                                    Time Remaining:
+                                </p>
+                                <p>
+                                    00d 00h 00m 00s
+                                </p>
+                            </div>
+                            <a href="#" class="btn btn-dark disabled">Current bid: $800</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-4">
+                    <div class="card">
+                        <img src="Artworks/1900s/Art-8.jpg" class="card-img-top img-size p-2" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Edmund C. Tarbell</h5>
+                            <p class="card-text opacity-75">Preparing for the Matinee (1907)</p>
+                            <div class="row opacity-50">
+                                <p class="mb-0">
+                                    Time Remaining:
+                                </p>
+                                <p>
+                                    00d 00h 00m 00s
+                                </p>
+                            </div>
+                            <a href="#" class="btn btn-dark disabled">Current bid: $1,200</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-5 col-sm-4 mt-3 mt-sm-0">
+                    <div class="card d-none">
+                        <img src="..." class="card-img-top img-size p-2" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold"></h5>
+                            <p class="card-text opacity-75"></p>
+                            <div class="row opacity-50">
+                                <p class="mb-0">
+                                    Time Remaining:
+                                </p>
+                                <p>
+                                    00d 00h 00m 00s
+                                </p>
+                            </div>
+                            <a href="#" class="btn btn-dark disabled">Current bid: $000</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row mt-5">
+
+                <div class="col-5 col-sm-4">
+                    <div class="card d-none">
+                        <img src="..." class="card-img-top img-size p-2" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold"></h5>
+                            <p class="card-text opacity-75"></p>
+                            <div class="row opacity-50">
+                                <p class="mb-0">
+                                    Time Remaining:
+                                </p>
+                                <p>
+                                    00d 00h 00m 00s
+                                </p>
+                            </div>
+                            <a href="#" class="btn btn-dark disabled">Current bid: $000</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-5 col-sm-4">
+                    <div class="card d-none">
+                        <img src="..." class="card-img-top img-size p-2" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold"></h5>
+                            <p class="card-text opacity-75"></p>
+                            <div class="row opacity-50">
+                                <p class="mb-0">
+                                    Time Remaining:
+                                </p>
+                                <p>
+                                    00d 00h 00m 00s
+                                </p>
+                            </div>
+                            <a href="#" class="btn btn-dark disabled">Current bid: $000</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-5 col-sm-4 mt-3 mt-sm-0">
+                    <div class="card d-none">
+                        <img src="..." class="card-img-top img-size p-2" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold"></h5>
+                            <p class="card-text opacity-75"></p>
+                            <div class="row opacity-50">
+                                <p class="mb-0">
+                                    Time Remaining:
+                                </p>
+                                <p>
+                                    00d 00h 00m 00s
+                                </p>
+                            </div>
+                            <a href="#" class="btn btn-dark disabled">Current bid: $000</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        
+        <nav class="pb-3">
+            <ul class="pagination justify-content-center">
+              <li class="page-item"><a class="page-link text-dark" href="1900s_page1.html">Previous</a></li>
+              <li class="page-item"><a class="page-link text-dark" href="1900s_page1.html">1</a></li>
+              <li class="page-item disabled"><a class="page-link" href="1900s_page2.html">2</a></li>
+              <li class="page-item disabled"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+            
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+    
+</body>
+</html>

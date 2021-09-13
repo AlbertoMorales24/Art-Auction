@@ -1,0 +1,111 @@
+.cgreen{
+    color:rgb(03,78,23);
+}
+.bgreen{
+    background-color:rgb(03,78,23);
+}
+.cred{
+    color:rgb(113,8,8);
+}
+.bordered{
+    border-color: rgb(113,8,8);
+}
+.bred{
+    background-color:rgb(113,8,8);
+}
+.cgray{
+    color:rgb(213,204,167);
+}
+.bgray{
+    background-color:rgb(213,204,167);
+}
+body{
+    font-family:Georgia, serif;
+    background-color: rgb(213,204,167);
+}
+
+.menu-icon{
+    content: url("menu_icon.png");
+    width: 60px;
+    height: 40px;
+    cursor:pointer;
+}
+
+.searchbar{
+    width: 300px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0; 
+    position: fixed;
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: #111; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+}
+  
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.text-image{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: white;
+    font-family: "Lucida Handwriting", cursive;
+}
+
+.text-fnt{
+    font-family: perpetua;
+    font-size: large;
+}
+
+.txt-justify{
+    text-align: justify;
+}
+
+.img-size{
+    height:350px;
+    border-style: groove;
+    border-color: brown;
+}
+
+@media(max-width:576px){
+    .img-size{
+        height:250px;
+        border-style: groove;
+    }
+}
+
+
+
+
+
